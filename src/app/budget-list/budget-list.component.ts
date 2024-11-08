@@ -1,20 +1,30 @@
-import { Component } from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
+import {ApiService} from '../services/api.service';
+import {Budget} from '../models/budget';
+import {DatePipe} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-budget-list',
   standalone: true,
-  imports: [],
+  imports: [
+    DatePipe
+  ],
   templateUrl: './budget-list.component.html',
   styleUrl: './budget-list.component.css',
 })
-export class BudgetListComponent {
-  /* ADDITIONAL DOCS:
-    - https://angular.dev/guide/components/lifecycle#
-    - https://angular.dev/guide/http/making-requests#http-observables
-    - https://angular.dev/guide/http/setup#providing-httpclient-through-dependency-injection
-    - https://angular.dev/guide/http/making-requests#setting-request-headers
-    - https://angular.dev/guide/http/making-requests#handling-request-failure
-    - https://angular.dev/guide/http/making-requests#best-practices (async pipe)
-    - https://angular.dev/guide/testing/components-scenarios#example-17 (async pipe)
-  */
+export class BudgetListComponent implements OnInit{
+  private readonly api = inject(ApiService)
+  private readonly router = inject(Router)
+
+  budgets: Budget[] = [];
+
+  ngOnInit(): void {
+    this.api.budgets.subscribe(budget => {this.budgets = budget;})
+  }
+
+  infoBudget(budget: string | undefined) {
+    if(budget == undefined){return;}
+    this.router.navigate([`/budget-view/${budget}`]);
+  }
 }
