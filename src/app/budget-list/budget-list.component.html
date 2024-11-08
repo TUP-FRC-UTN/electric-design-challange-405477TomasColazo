@@ -1,1 +1,25 @@
-<!-- BUILD IT FROM HERE https://getbootstrap.com/docs/5.3/content/tables/#striped-rows -->
+<!-- BUILD IT FROM H<app-budget-list></app-budget-list>ERE https://getbootstrap.com/docs/5.3/content/tables/#striped-rows -->
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Módulos</th>
+      <th scope="col">Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (budget of budgets; track $index){
+        <tr>
+          <th scope="row">{{budget.id}}</th>
+          <td>{{budget.client}}</td>
+          <td>{{budget.date | date: "dd-MM-yyyy"}}</td>
+          <td>{{budget.module.length}}</td>
+          <td><button class="btn bi-calculator" (click)="infoBudget(budget.id)"></button></td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

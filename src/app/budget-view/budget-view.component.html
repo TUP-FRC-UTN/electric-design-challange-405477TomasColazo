@@ -1,1 +1,18 @@
 <!-- BUILD IT FROM HERE https://getbootstrap.com/docs/5.3/components/card/#sizing -->
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h2 *ngIf="budget" class="card-title mb-4">Presupuesto #{{budget.id}}</h2>
+      <h5>Cajas necesaria: {{boxes}}</h5>
+      <hr>
+      @for (zone of zones; track zone){
+        <h3 class="card-title mt-3 mb-2">{{zone.valueOf()}}</h3>
+        @for (module of getModulesByZone(zone);track module){
+          <h5> <i class="bi bi-lightning-fill " style="color: gold"></i> {{module.type.name}} ({{module.type.slots}}) - {{module.type.price | currency}}</h5>
+        }
+        <hr>
+      }
+      <h3 class="mt-3 fw-bold">Total Cotización: {{total | currency}}</h3>
+    </div>
+  </div>
+</div>

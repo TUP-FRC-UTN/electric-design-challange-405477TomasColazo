@@ -1,5 +1,221 @@
 {
-  "budgets": [],
+  "budgets": [
+    {
+      "id": "1731008522709",
+      "client": "asdas",
+      "date": "2024-11-04",
+      "module": [
+        {
+          "zone": "Living",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        },
+        {
+          "zone": "Living",
+          "type": {
+            "id": "2",
+            "name": "Interruptor doble",
+            "slots": 2,
+            "price": 2000
+          }
+        },
+        {
+          "zone": "Living",
+          "type": {
+            "id": "3",
+            "name": "Toma corriente simple",
+            "slots": 1,
+            "price": 1500
+          }
+        },
+        {
+          "zone": "Comedor",
+          "type": {
+            "id": "3",
+            "name": "Toma corriente simple",
+            "slots": 1,
+            "price": 1500
+          }
+        },
+        {
+          "zone": "Dormitorio",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        }
+      ]
+    },
+    {
+      "id": "1731008570607",
+      "client": "asdawdawd",
+      "date": "2024-11-04",
+      "module": [
+        {
+          "zone": "Living",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        },
+        {
+          "zone": "Comedor",
+          "type": {
+            "id": "2",
+            "name": "Interruptor doble",
+            "slots": 2,
+            "price": 2000
+          }
+        },
+        {
+          "zone": "Dormitorio",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        },
+        {
+          "zone": "Cocina",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        }
+      ]
+    },
+    {
+      "id": "1731031765082",
+      "client": "Tomas",
+      "date": "2024-11-08",
+      "module": [
+        {
+          "zone": "Living",
+          "type": {
+            "id": "3",
+            "name": "Toma corriente simple",
+            "slots": 1,
+            "price": 1500
+          }
+        },
+        {
+          "zone": "Cocina",
+          "type": {
+            "id": "2",
+            "name": "Interruptor doble",
+            "slots": 2,
+            "price": 2000
+          }
+        },
+        {
+          "zone": "Dormitorio",
+          "type": {
+            "id": "2",
+            "name": "Interruptor doble",
+            "slots": 2,
+            "price": 2000
+          }
+        },
+        {
+          "zone": "Cocina",
+          "type": {
+            "id": "5",
+            "name": "Toma corriente triple",
+            "slots": 3,
+            "price": 1700
+          }
+        },
+        {
+          "zone": "Cocina",
+          "type": {
+            "id": "5",
+            "name": "Toma corriente triple",
+            "slots": 3,
+            "price": 1700
+          }
+        }
+      ]
+    },
+    {
+      "id": "1731032265686",
+      "client": "Fede",
+      "date": "2024-11-08",
+      "module": [
+        {
+          "zone": "Living",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        },
+        {
+          "zone": "Living",
+          "type": {
+            "id": "2",
+            "name": "Interruptor doble",
+            "slots": 2,
+            "price": 2000
+          }
+        },
+        {
+          "zone": "Dormitorio",
+          "type": {
+            "id": "5",
+            "name": "Toma corriente triple",
+            "slots": 3,
+            "price": 1700
+          }
+        }
+      ]
+    },
+    {
+      "id": "1731033686814",
+      "client": "Mati",
+      "date": "2024-11-01",
+      "module": [
+        {
+          "zone": "Comedor",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        },
+        {
+          "zone": "Dormitorio",
+          "type": {
+            "id": "3",
+            "name": "Toma corriente simple",
+            "slots": 1,
+            "price": 1500
+          }
+        },
+        {
+          "zone": "Dormitorio",
+          "type": {
+            "id": "1",
+            "name": "Interruptor simple",
+            "slots": 1,
+            "price": 1000
+          }
+        }
+      ]
+    }
+  ],
   "module-types": [
     {
       "id": "1",
